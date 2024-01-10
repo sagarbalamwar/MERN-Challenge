@@ -4,7 +4,7 @@ import axios from "axios"
 const Header = () => {
   const [transactions, setTransactions] = useState([])
   const [month, setMonth] = useState("3")
-  
+
   useEffect(() => {
     const fetchTransactions = async () => {
       try {
@@ -12,7 +12,7 @@ const Header = () => {
         if (month) {
           url += `?month=${month}`
         }
-        const response=await axios.get(url)
+        const response = await axios.get(url)
         setTransactions(response.data)
       } catch (error) {
         console.error("Error fetching transactions:", error)
