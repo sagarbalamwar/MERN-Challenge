@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(141, 141, 206);
+}
+.month {
+  border: 2px solid black;
+  width: 10rem;
+  border-radius: 5px;
+  margin-left: 80rem;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: rgb(169, 213, 213);
+  color: black;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: x-large;
+  font-weight: 500;
+}
+.main{
+  
+  height: 50vh;
+  width: 100%;
+}
+.data {
+  margin-left: 40rem;
+  background-color: rgb(240, 240, 126);
+  width: 15rem;
+  padding: 10px;
+  height: 10rem;
+  bottom: 10px;
+  padding-top: 20px;
+  border-radius: 20px;
+}
+.container {
+  display: flex;
+}
+.statdata {
+  margin-top: 20px;
+}
